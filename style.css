@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+    font-family:'Courier New', Courier, monospace ;
+}
+
+header > nav > ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-column:  repeat(4, auto);
+    width: 400px;
+    margin: auto;
+}
+
+header > nav {
+    padding: 20px 0;
+    background-color: black;
+}
+
+header a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color:blanchedalmond
+}
+header ul> li {
+    position: relative;
+}
+header.submenu{
+    position: absolute;
+    z-index: 1;
+    background-color: #444;
+    padding: 5px 10px;
+    top: 0;
+    left: 0;
+    transition: scaleY(0);
+    transform-origin: top;
+    transition: transform 200ms;
+}
+header .submenu a{
+    color:cornsilk;
+}
+header li:hover .submenu {
+    transform: scaleY(1);
+}
+header:hover a{
+color: white;
+}
+
+
